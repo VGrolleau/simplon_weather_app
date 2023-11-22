@@ -7,19 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplon weather app</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/meteo.js"></script>
 </head>
 
 <body>
     <div class="card">
         <div class="weather">
-            <h2 class="city"></h2>
-            <h1 class="temp"></h1>
-            <div class="description"></div>
-            <div class="humidity"></div>
-            <div class="wind"></div>
+            <h2 class="city">Weather in Poitiers</h2>
+            <h1 class="temp">45°C</h1>
+            <div class="flex">
+                <img src="./assets/img/clear.svg" class="icon"></img>
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="rainProb">Rain probability: 15%</div>
+            <div class="wind">Wind speed: 6.2 km/h</div>
         </div>
     </div>
+    <script type="module" src="js/meteo.js"></script>
 </body>
 
 </html>
