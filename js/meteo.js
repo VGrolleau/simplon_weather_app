@@ -1,5 +1,9 @@
 import { config, weatherCodes } from "../config/conf.js";
 
+setInterval(() => {
+    location.reload(true);
+}, 3600000);
+
 let weather = {
     fetchWeather: function (inseeCity) {
         fetch(`https://api.meteo-concept.com/api/forecast/nextHours?token=${config.token}&insee=${inseeCity}`)
