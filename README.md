@@ -6,7 +6,9 @@ Projet pour la préparation à la journée de sélection pour le parcours de for
 
 - HTML/CSS (intégration de composants et interfaces standards)
 - JavaScript (DOM, fetch)
-- API de Météo Concept : https://api.meteo-concept.com/ (récupération des données météo)
+- API de Open Weather Map : https://openweathermap.org/ (récupération des données météo)
+- Initialiser npm sur le projet
+- Installer Express.js, dotenv, axios, et nodemon
 
 ## Scénario
 
