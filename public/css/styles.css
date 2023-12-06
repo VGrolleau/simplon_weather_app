@@ -1,16 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
     background: #222;
-    font-family: 'Open Sans', sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     font-size: 120%;
+    text-align: center;
 }
 
 .card {
@@ -19,29 +24,41 @@ body {
     padding: 2em;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     margin: 1em;
-}
-
-h1.temp {
-    margin: 0;
-    margin-bottom: 0.4em;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-}
-
-.description {
-    text-transform: capitalize;
-    margin-left: 8px;
 }
 
 .card:hover {
     box-shadow: 5px 5px 5px #00000056;
 }
 
+.details {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .icon {
-    width: 50px;
+    width: 80px;
+}
+
+.temp-wind-humidity {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+}
+
+.temp p {
+    margin-top: 10px;
+}
+
+.humidity {
+    margin-top: 10px;
 }
