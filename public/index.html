@@ -13,15 +13,30 @@
 <body>
     <div class="card">
         <div class="weather">
-            <h2 class="city">Weather in Poitiers</h2>
-            <h1 class="temp">45°C</h1>
-            <div class="flex">
-                <img src="./assets/img/clear.svg" class="icon"></img>
-                <div class="description">Cloudy</div>
+            <div class="city-hour">
+                <h2 data-city>City</h2>
+                <p><span data-hour>Hour</span> h</p>
             </div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="rainProb">Rain probability: 15%</div>
-            <div class="wind">Wind speed: 6.2 km/h</div>
+
+            <section>
+                <div>
+                    <img src="https://openweathermap.org/img/wn/02n.png" class="icon" data-icon></img>
+                    <p data-description>Description</p>
+                </div>
+                <div class="temp-wind-humidity">
+                    <div class="temp">
+                        <h1><span data-real>Real</span> °C</h1>
+                        <p>Ressenti : <span data-feel>Feel</span> °C</p>
+                    </div>
+                    <div class="wind">
+                        <div data-arrow>=></div>
+                        <div><span data-speed>Speed</span> km/h</div>
+                    </div>
+                    <div class="humidity">
+                        <p>Humidité : <span data-humidity>Percent</span> %</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
