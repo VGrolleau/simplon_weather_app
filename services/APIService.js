@@ -6,7 +6,6 @@ const express = require('express');
 const app = express();
 
 const config = require('../public/js/config.json');
-const inseeCity = config.city.insee;
 const cityName = config.city.name;
 const country = config.city.country;
 
@@ -19,7 +18,7 @@ app.get('/weather', (req, res) => {
         url: url,
         responseType: 'json'
     })
-        .then(data => console.log(data.data))
+        .then(data => res.json(data.data))
 })
 
 app.listen(3000, () => {
