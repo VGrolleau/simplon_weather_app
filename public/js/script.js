@@ -77,7 +77,7 @@ const setWeatherData = (data) => {
     };
 
     // Set a delay of one hour after initial loading
-    setTimeout(refreshPage, 1 * 60 * 60 * 1000); // 60 minutes * 60 seconds * 1000 ms
+    setTimeout(refreshPage, 60 * 60 * 1000); // 60 minutes * 60 seconds * 1000 ms
 };
 
 // Initiate the weather data retrieval
